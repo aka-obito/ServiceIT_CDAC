@@ -258,7 +258,6 @@ This project is developed as part of the Post Graduate Diploma in Advanced Compu
 ## Author
 
 **Dhawal Turkar**
-PG-DAC, C-DAC [Your Center Name]
-Email: [your-email@gmail.com]
-LinkedIn: [LinkedIn Profile URL]
-GitHub: [GitHub Profile URL]
+PGCP-AC, C-DAC [IACSD]
+Email: [dhawalturkar@gmail@gmail.com]
+LinkedIn: [https://www.linkedin.com/in/dhawal-turkar/]
