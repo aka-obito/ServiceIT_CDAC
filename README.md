@@ -99,8 +99,8 @@ SERVICEiT/
 ### Step 1 - Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/aka-obito/ServiceIT_CDAC
+cd ServiceIT_CDAC
 ```
 
 ---
