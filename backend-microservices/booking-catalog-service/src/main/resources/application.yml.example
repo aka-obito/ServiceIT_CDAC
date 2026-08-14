@@ -1,0 +1,39 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: booking-catalog-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/serviceit_booking_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: YOUR_DB_USERNAME        # e.g. root
+    password: YOUR_DB_PASSWORD        # e.g. Pass@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: 127.0.0.1
+
+# JWT Secret - Must match the same secret used in api-gateway and user-auth-service
+jwt:
+  secret: YOUR_BASE64_JWT_SECRET_KEY
+  expiration: 86400000                # Token validity in milliseconds (24 hours)
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

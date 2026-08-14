@@ -1,0 +1,56 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: payment-notification-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/serviceit_payment_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: YOUR_DB_USERNAME        # e.g. root
+    password: YOUR_DB_PASSWORD        # e.g. Pass@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: YOUR_GMAIL_ADDRESS      # e.g. yourname@gmail.com
+    password: YOUR_GMAIL_APP_PASSWORD # 16-digit Gmail App Password (not your login password)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: 127.0.0.1
+
+# Razorpay Credentials
+# Get your keys from: https://dashboard.razorpay.com/app/keys
+razorpay:
+  key:
+    id: YOUR_RAZORPAY_KEY_ID          # e.g. rzp_test_XXXXXXXXXX
+    secret: YOUR_RAZORPAY_KEY_SECRET  # e.g. XXXXXXXXXXXXXXXXXX
+
+# JWT Secret - Must match the same secret used in api-gateway and other services
+jwt:
+  secret: YOUR_BASE64_JWT_SECRET_KEY
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

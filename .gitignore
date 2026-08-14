@@ -1,0 +1,30 @@
+# Maven build output
+target/
+*.class
+*.jar
+*.war
+
+# Spring Boot application secrets
+**/application.yml
+**/application.properties
+**/application-*.yml
+**/application-*.properties
+
+# IDE files
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.sts4-cache/
+
+# Node modules and frontend build
+node_modules/
+dist/
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
