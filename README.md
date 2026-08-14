@@ -251,7 +251,7 @@ Frontend runs at: http://localhost:5173
 
 ## License
 
-This project is developed as part of the Post Graduate Diploma in Advanced Computing (PGCP-AC) at C-DAC, [IACSD Akurdi].
+This project is developed as part of the Post Graduate Certification Program in Advanced Computing (PGCP-AC) at C-DAC, [IACSD Akurdi].
 
 ---
 
