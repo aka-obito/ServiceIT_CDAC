@@ -259,5 +259,5 @@ This project is developed as part of the Post Graduate Diploma in Advanced Compu
 
 **Dhawal Turkar**
 PGCP-AC, C-DAC [IACSD]
-Email: [dhawalturkar@gmail@gmail.com]
+Email: [dhawalturkar@gmail.com]
 LinkedIn: [https://www.linkedin.com/in/dhawal-turkar/]
